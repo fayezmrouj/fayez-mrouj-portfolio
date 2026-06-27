@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1B17"/>
+      <stop offset="50%" stop-color="#0A1F18"/>
+      <stop offset="100%" stop-color="#0F1B17"/>
+    </linearGradient>
+    <linearGradient id="emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#B8941F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10B981" stroke-width="0.5" opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Orbit decorations (left side) -->
+  <g transform="translate(180, 315)" opacity="0.6">
+    <ellipse cx="0" cy="0" rx="140" ry="55" fill="none" stroke="#10B981" stroke-width="1.5" opacity="0.4" transform="rotate(-20)"/>
+    <ellipse cx="0" cy="0" rx="140" ry="55" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.3" transform="rotate(40)"/>
+    <ellipse cx="0" cy="0" rx="140" ry="55" fill="none" stroke="#10B981" stroke-width="1.5" opacity="0.2" transform="rotate(80)"/>
+    <!-- Nucleus -->
+    <circle cx="0" cy="0" r="8" fill="url(#emerald)"/>
+    <!-- Electrons -->
+    <circle cx="131" cy="48" r="5" fill="#D4AF37"/>
+    <circle cx="-131" cy="-48" r="5" fill="#10B981"/>
+    <circle cx="48" cy="-131" r="4" fill="#D4AF37" opacity="0.7"/>
+  </g>
+
+  <!-- Glow behind text -->
+  <rect x="380" y="0" width="800" height="630" fill="url(#glow)" opacity="0.5"/>
+
+  <!-- Content (right side) -->
+  <g transform="translate(420, 0)">
+    <!-- Logo badge -->
+    <rect x="0" y="105" width="80" height="80" rx="18" fill="url(#emerald)"/>
+    <text x="40" y="167" font-family="Manrope, Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="#FFFFFF" text-anchor="middle">F</text>
+    <circle cx="68" cy="120" r="5" fill="url(#gold)"/>
+
+    <!-- Name -->
+    <text x="0" y="260" font-family="Manrope, Inter, system-ui, sans-serif" font-size="68" font-weight="800" fill="#FFFFFF" letter-spacing="-2">Fayez Ahmad Mrouj</text>
+
+    <!-- Title with gradient -->
+    <text x="0" y="320" font-family="Manrope, Inter, system-ui, sans-serif" font-size="38" font-weight="600" fill="#10B981" letter-spacing="-0.5">International Physics Educator</text>
+
+    <!-- Stats row -->
+    <g transform="translate(0, 380)">
+      <text x="0" y="0" font-family="Manrope, Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="#D4AF37">28+</text>
+      <text x="0" y="22" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#9CA3AF">Years Experience</text>
+
+      <text x="180" y="0" font-family="Manrope, Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="#D4AF37">5</text>
+      <text x="180" y="22" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#9CA3AF">Institutions</text>
+
+      <text x="320" y="0" font-family="Manrope, Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="#D4AF37">2</text>
+      <text x="320" y="22" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#9CA3AF">Countries</text>
+
+      <text x="440" y="0" font-family="Manrope, Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="#D4AF37">100+</text>
+      <text x="440" y="22" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#9CA3AF">Certifications</text>
+    </g>
+
+    <!-- Tagline -->
+    <text x="0" y="490" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#9CA3AF" font-style="italic">Inspiring curiosity · Empowering learners · Shaping future generations</text>
+
+    <!-- Bottom badges -->
+    <g transform="translate(0, 545)">
+      <rect x="0" y="0" width="120" height="32" rx="16" fill="#10B981" opacity="0.15"/>
+      <text x="60" y="21" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#10B981" text-anchor="middle">Physics</text>
+
+      <rect x="135" y="0" width="120" height="32" rx="16" fill="#D4AF37" opacity="0.15"/>
+      <text x="195" y="21" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#D4AF37" text-anchor="middle">AI in Education</text>
+
+      <rect x="270" y="0" width="120" height="32" rx="16" fill="#10B981" opacity="0.15"/>
+      <text x="330" y="21" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#10B981" text-anchor="middle">Smart Learning</text>
+    </g>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="625" width="1200" height="5" fill="url(#emerald)"/>
+</svg>
