@@ -26,6 +26,7 @@ const jetbrainsMono = JetBrains_Mono({
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://fayez-mrouj-portfolio.vercel.app";
 const PERSON_NAME = "Fayez Ahmad Mrouj";
 const PERSON_DESC =
+  "Fayez Ahmad Mrouj — International Physics Educator with 28+ years teaching Physics in Jordan and the UAE. Portfolio, CV, certifications, and Physics Platform.";
   "International Physics Educator with 28+ years of experience across Jordan and the UAE. Specialist in physics education, educational technology, AI in education, and smart learning.";
 
 export const metadata: Metadata = {
